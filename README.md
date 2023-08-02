@@ -1,1 +1,3 @@
 # My_CF_solutions
+Hey,hello. what's up.....
+I'm a bad coder and problem solver.Started with Python,let's dive into my python solutions of codeforces problems.
