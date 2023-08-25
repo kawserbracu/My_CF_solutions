@@ -1,0 +1,28 @@
+# A - Gift Carpet
+for a in range(int(input())):
+  n,m=map(int,input().split())
+  v="vika"
+  st=""
+  lists=[]
+  for f in range(n):
+    q=input()
+    if f==0:
+     for o in range(m):
+      lists.append([q[o]])
+    else:
+      for g in range(m):
+        lists[g].append(q[g])
+  if m<4:
+    print("NO")
+  else:
+    d=0
+    for x in range(m):
+      if v[d] in lists[x]:
+        st+=v[d]
+        d+=1
+        if d==4:
+          break
+    if v==st:
+      print("YES")
+    else:
+      print("NO")
