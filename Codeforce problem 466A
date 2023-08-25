@@ -1,0 +1,15 @@
+#https://codeforces.com/problemset/problem/466/A
+for i in range(int(input())):
+    n,m,a,b=map(int,input().split())
+    d=b/m
+    if d<=a:
+        t=round(n/m)
+        t1=n/m
+        ans=b*t+(n-t1*m)*a
+        bns=b*t+(n-t1*m)*b
+    else:
+        t=round(n/a)
+        t1=n
+        ans=a*t+(n-t1*a)*b
+        bns=a*t+(n-t1*a)*a
+    print(min(int(ans),int(bns)))
